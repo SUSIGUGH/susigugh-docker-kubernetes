@@ -1,7 +1,7 @@
 pipeline{
   agent any
   stages{
-       stage "Build"{
+       stage ("Build"){
       steps{
       sudo docker pull httpd
       sudo docker build -t httpdimg Dockerfile
