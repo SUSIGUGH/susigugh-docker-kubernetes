@@ -4,6 +4,7 @@ pipeline{
     stage "Connect to GitHub"
     {
       steps{
+        echo "Welcome"
       }
     }
     stage "Build"{
