@@ -24,3 +24,6 @@ pipeline{
       // sh 'ssh -i jmktsrv01.pem ec2-user@3.109.143.71 "kubectl create -f deployment.yaml"'
   }
 }
+  }
+}
+
