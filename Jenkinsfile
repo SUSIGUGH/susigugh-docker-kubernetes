@@ -15,7 +15,7 @@ pipeline{
         sh 'sudo docker rm httpdimg1'
     }
     }
-    stage ("Build"){
+    stage ("Deployment"){
       steps{
       sh 'chmod 400 jmktsrv01.pem'
       sh 'ls -ltr'
