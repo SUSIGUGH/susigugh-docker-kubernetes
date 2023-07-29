@@ -5,7 +5,7 @@ pipeline{
       steps{
         echo "Welcome"
         sh 'whoami'
-        // sh 'sudo docker pull httpd'
+        sh 'sudo docker pull httpd'
       //sudo docker build -t httpdimg Dockerfile
       // sudo docker image tag httpdimg susigugh/httpdimg:1.3
       // sudo docker push susigugh/httpdimg:1.2
