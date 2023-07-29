@@ -1,4 +1,4 @@
 FROM httpd
-RUN mkdir /app
-COPY . /app
-CMD ["nohup","node","/app/file.js","&"]
+RUN mkdir /var/www/html
+COPY index.html /var/www/html
+COPY Capture.PNG /var/www/html
