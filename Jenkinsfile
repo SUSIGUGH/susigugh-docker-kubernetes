@@ -1,13 +1,7 @@
 pipeline{
   agent any
   stages{
-    stage "Connect to GitHub"
-    {
-      steps{
-        echo "Welcome"
-      }
-    }
-    stage "Build"{
+       stage "Build"{
       steps{
       sudo docker pull httpd
       sudo docker build -t httpdimg Dockerfile
