@@ -22,6 +22,7 @@ pipeline{
       sh 'ssh -i jmtksrv01.pem -o StrictHostKeyChecking=no ec2-user@3.109.143.71 "ls -ltr"'
       sh 'scp -i jmtksrv01.pem -o StrictHostKeyChecking=no deployment.yaml ec2-user@3.109.143.71:/home/ec2-user/'
       sh 'ssh -i jmtksrv01.pem ec2-user@3.109.143.71 "kubectl create -f deployment.yaml"'
+      sh 'ssh -i jmtksrv01.pem ec2-user@3.109.143.71 "kubectl create -f service.yaml"'
   }
 }
   }
