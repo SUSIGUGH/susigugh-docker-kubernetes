@@ -1,4 +1,4 @@
 FROM httpd
-RUN mkdir /var/www/html -p
-COPY index.html /var/www/html
-COPY Capture.PNG /var/www/html
+RUN mkdir /usr/local/apache2/htdocs -p
+COPY index.html /usr/local/apache2/htdocs
+COPY Capture.PNG /usr/local/apache2/htdocs
