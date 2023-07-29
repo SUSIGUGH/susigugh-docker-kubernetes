@@ -19,7 +19,7 @@ pipeline{
       steps{
       sh 'chmod 400 jmktsrv01.pem'
       sh 'ls -ltr'
-      sh 'ssh -i jmktsrv01.pem ec2-user@3.109.143.71 "ls -ltr"'
+      sh 'ssh -i jmtksrv01.pem ec2-user@3.109.143.71 "ls -ltr"'
       // sh 'scp -i jmktsrv01.pem -o StrictHostKeyChecking=no deployment.yaml ec2-user@3.109.143.71:/home/ec2-user/'
       // sh 'ssh -i jmktsrv01.pem ec2-user@3.109.143.71 "kubectl create -f deployment.yaml"'
   }
