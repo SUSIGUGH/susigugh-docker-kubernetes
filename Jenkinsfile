@@ -19,7 +19,8 @@ pipeline{
       steps{
       sh 'chmod 400 jmktsrv01.pem'
       sh 'ls -ltr'
-      sh 'scp -i susiminikube.pem -o StrictHostKeyChecking=no replicaset.yaml ec2-user@43.204.109.189:/home/ec2-user/'
-      sh 'ssh -i susiminikube.pem ec2-user@43.204.109.189 "kubectl create -f replicaset.yaml"'
+      sh 'ssh -i jmktsrv01.pem ec2-user@3.109.143.71 "ls -ltr"'
+      // sh 'scp -i jmktsrv01.pem -o StrictHostKeyChecking=no deployment.yaml ec2-user@3.109.143.71:/home/ec2-user/'
+      // sh 'ssh -i jmktsrv01.pem ec2-user@3.109.143.71 "kubectl create -f deployment.yaml"'
   }
 }
